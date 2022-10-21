@@ -1,11 +1,11 @@
---- a/config.def.h	2022-10-22 00:15:48.724207386 +0530
-+++ b/config.def.h	2022-10-22 00:15:32.388239954 +0530
+--- /tmp/config.def.h	2022-10-22 00:34:02.976188491 +0530
++++ config.def.h	2022-10-22 00:34:10.971724218 +0530
 @@ -5,7 +5,7 @@
   *
   * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
   */
--static char *font = "Mononoki:pixelsize=20:antialias=true:autohint=true";
-+static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
++static char *font = "Mononoki:pixelsize=20:antialias=true:autohint=true";
  static int borderpx = 2;
  
  /*
@@ -13,8 +13,8 @@
   * 4: value of shell in /etc/passwd
   * 5: value of shell in config.h
   */
--static char *shell = "/bin/ksh93";
-+static char *shell = "/bin/sh";
+-static char *shell = "/bin/sh";
++static char *shell = "/bin/ksh93";
  char *utmp = NULL;
  /* scroll program: to enable use a string like "scroll" */
  char *scroll = NULL;
@@ -22,14 +22,14 @@
      [257] = "#f8f8f2", /* foreground */
  
  	/* more colors can be added after 255 to use with DefaultXX */
--	"#000000",
--	"#282a36",
--	"#f8f8f2", /* default foreground colour */
--	"#000000", /* default background colour */
-+	"#cccccc",
-+	"#555555",
-+	"gray90", /* default foreground colour */
-+	"black", /* default background colour */
+-	"#cccccc",
+-	"#555555",
+-	"gray90", /* default foreground colour */
+-	"black", /* default background colour */
++	"#000000",
++	"#282a36",
++	"#f8f8f2", /* default foreground colour */
++	"#000000", /* default background colour */
  };
  
  
@@ -37,8 +37,8 @@
   * foreground, background, cursor
   */
  unsigned int defaultfg = 257;
--unsigned int defaultbg = 258;
-+unsigned int defaultbg = 256;
+-unsigned int defaultbg = 256;
++unsigned int defaultbg = 258;
  unsigned int defaultcs = 257;
  static unsigned int defaultrcs = 257;
  
