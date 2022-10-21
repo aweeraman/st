@@ -1,5 +1,5 @@
---- /tmp/config.def.h	2022-10-22 00:34:02.976188491 +0530
-+++ config.def.h	2022-10-22 00:34:10.971724218 +0530
+--- a/config.def.h	2022-10-22 00:34:02.976188491 +0530
++++ b/config.def.h	2022-10-22 00:34:10.971724218 +0530
 @@ -5,7 +5,7 @@
   *
   * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
