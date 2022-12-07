@@ -1,7 +1,16 @@
 diff --git a/config.def.h b/config.def.h
-index 91ab8ca..393c9aa 100644
+index 91ab8ca..7886a8c 100644
 --- a/config.def.h
 +++ b/config.def.h
+@@ -5,7 +5,7 @@
+  *
+  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
+  */
+-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
++static char *font = "Terminus:pixelsize=26:antialias=true:autohint=true";
+ static int borderpx = 2;
+ 
+ /*
 @@ -93,29 +93,34 @@ char *termname = "st-256color";
   */
  unsigned int tabspaces = 8;
@@ -53,7 +62,7 @@ index 91ab8ca..393c9aa 100644
 +    [15] = "#ffffff", /* white   */
 +                                   
 +    /* special colors */
-+    [256] = "#282a36", /* background */
++    [256] = "#000000", /* background */
 +    [257] = "#f8f8f2", /* foreground */
  
  	/* more colors can be added after 255 to use with DefaultXX */
@@ -1614,7 +1623,7 @@ index fd3b0d8..55479fd 100644
  extern unsigned int defaultcs;
 +extern float alpha;
 diff --git a/x.c b/x.c
-index 2a3bd38..584773c 100644
+index aa09997..cc45103 100644
 --- a/x.c
 +++ b/x.c
 @@ -94,6 +94,7 @@ typedef struct {
@@ -1773,7 +1782,7 @@ index 2a3bd38..584773c 100644
  	win.mode = MODE_NUMLOCK;
  	resettitle();
  	xhints();
-@@ -2035,6 +2077,9 @@ main(int argc, char *argv[])
+@@ -2038,6 +2080,9 @@ main(int argc, char *argv[])
  	case 'a':
  		allowaltscreen = 0;
  		break;
