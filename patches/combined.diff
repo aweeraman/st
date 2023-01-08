@@ -16,7 +16,7 @@ index 91ab8ca..7886a8c 100644
  unsigned int tabspaces = 8;
  
 +/* bg opacity */
-+float alpha = 0.9;
++float alpha = 1.0;
 +
  /* Terminal colors (16 first used in escape sequence) */
  static const char *colorname[] = {
@@ -62,7 +62,7 @@ index 91ab8ca..7886a8c 100644
 +    [15] = "#ffffff", /* white   */
 +                                   
 +    /* special colors */
-+    [256] = "#000000", /* background */
++    [256] = "#1d1f21", /* background */
 +    [257] = "#f8f8f2", /* foreground */
  
  	/* more colors can be added after 255 to use with DefaultXX */
