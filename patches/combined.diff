@@ -1,5 +1,5 @@
 diff --git a/config.def.h b/config.def.h
-index 91ab8ca..ebc1695 100644
+index 91ab8ca..31a466b 100644
 --- a/config.def.h
 +++ b/config.def.h
 @@ -5,8 +5,8 @@
@@ -13,15 +13,6 @@ index 91ab8ca..ebc1695 100644
  
  /*
   * What program is execed by st depends of these precedence rules:
-@@ -74,7 +74,7 @@ static unsigned int cursorthickness = 2;
- static int bellvolume = 0;
- 
- /* default TERM value */
--char *termname = "st-256color";
-+char *termname = "st";
- 
- /*
-  * spaces per tab
 @@ -93,29 +93,34 @@ char *termname = "st-256color";
   */
  unsigned int tabspaces = 8;
