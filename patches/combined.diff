@@ -1,22 +1,33 @@
 diff --git a/config.def.h b/config.def.h
-index 91ab8ca..7886a8c 100644
+index 91ab8ca..ebc1695 100644
 --- a/config.def.h
 +++ b/config.def.h
-@@ -5,7 +5,7 @@
+@@ -5,8 +5,8 @@
   *
   * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
   */
 -static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+-static int borderpx = 2;
 +static char *font = "NotoSansMono:pixelsize=22:antialias=true:autohint=true";
- static int borderpx = 2;
++static int borderpx = 10;
  
  /*
+  * What program is execed by st depends of these precedence rules:
+@@ -74,7 +74,7 @@ static unsigned int cursorthickness = 2;
+ static int bellvolume = 0;
+ 
+ /* default TERM value */
+-char *termname = "st-256color";
++char *termname = "st";
+ 
+ /*
+  * spaces per tab
 @@ -93,29 +93,34 @@ char *termname = "st-256color";
   */
  unsigned int tabspaces = 8;
  
 +/* bg opacity */
-+float alpha = 1.0;
++float alpha = 1.00;
 +
  /* Terminal colors (16 first used in escape sequence) */
  static const char *colorname[] = {
@@ -93,6 +104,15 @@ index 91ab8ca..7886a8c 100644
  /*
   * Default shape of cursor
   * 2: Block ("█")
+@@ -147,7 +160,7 @@ static unsigned int cursorshape = 2;
+  * Default columns and rows numbers
+  */
+ 
+-static unsigned int cols = 80;
++static unsigned int cols = 100;
+ static unsigned int rows = 24;
+ 
+ /*
 @@ -176,6 +189,8 @@ static uint forcemousemod = ShiftMask;
   */
  static MouseShortcut mshortcuts[] = {
